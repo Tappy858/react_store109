@@ -6,3 +6,17 @@
     margin: 5px 7px;
     border-radius: 4px;
 }
+
+/* products.css */
+
+.product img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.product h5 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
