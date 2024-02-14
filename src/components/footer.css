@@ -1,0 +1,44 @@
+/* footer.css */
+
+.footer {
+    background-color: #343a40;
+    /* Set your desired background color */
+    color: black;
+    /* Set your desired text color */
+    padding: 20px 0;
+    /* Set padding as needed */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row {
+    width: 100%;
+}
+
+.col-md-6 {
+    width: 48%;
+    /* Adjust width as needed */
+}
+
+h5 {
+    color: #28a745;
+    /* Set your desired heading color */
+}
+
+address {
+    color: black;
+    /* Set your desired text color */
+}
+
+a {
+    color: black;
+    /* Set your desired link color */
+}
+
+a:hover {
+    text-decoration: underline;
+    /* Add underline on hover for links */
+}

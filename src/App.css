@@ -1,3 +1,12 @@
+/* App.css */
+
+body {
+  background-color: #f8f8f8;
+  /* Light gray background */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -5,6 +14,8 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  transition: transform 0.3s ease;
+  /* Smooth transition for the logo */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,25 +24,43 @@
   }
 }
 
+.App-logo:hover {
+  transform: scale(1.1);
+  /* Slightly scale up on hover for an interactive feel */
+}
+
 .App-header {
-  background-color: #282c34;
+  background-color: #2ecc71;
+  /* Light green background color */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(14px + 2vmin);
+  /* Increased font size for better readability */
   color: white;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #3498db;
+  /* Blue link color */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  /* Smooth transition for link color */
+}
+
+.App-link:hover {
+  color: #2c3e50;
+  /* Darker blue on hover */
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

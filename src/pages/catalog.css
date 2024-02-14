@@ -1,0 +1,42 @@
+/* catalog.css */
+
+.product-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.product-container h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.product-container p {
+    margin-bottom: 20px;
+}
+
+/* Style for individual product component */
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 14px;
+}
+
+/* Add additional styles as needed */

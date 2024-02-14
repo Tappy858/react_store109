@@ -1,0 +1,18 @@
+/* home.css */
+
+.home {
+    text-align: center;
+    padding: 40px;
+    background-color: #c2ada1;
+}
+
+.home h3 {
+    color: #28a745;
+    /* Set your desired text color */
+}
+
+.home h1 {
+    color: #333;
+    /* Set your desired text color */
+}
+

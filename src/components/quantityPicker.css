@@ -1,0 +1,35 @@
+/* quantityPicker.css */
+
+.quantityPicker {
+    display: flex;
+    align-items: center;
+}
+
+.quantityPicker button {
+    background: linear-gradient(to bottom, #537944, #6a9955);
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.quantityPicker button:disabled {
+    background: linear-gradient(to bottom, #778c66, #8fa779);
+    cursor: not-allowed;
+}
+
+.quantityPicker button:hover {
+    background: linear-gradient(to bottom, #445e2b, #5a7f3d);
+}
+
+.label {
+    margin: 0 10px;
+    font-size: 16px;
+    color: #537944;
+}
+
+/* Add additional styles as needed */
