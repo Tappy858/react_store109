@@ -2,8 +2,8 @@
 import './App.css';
 import Footer from './components/footer';
 import Navbar from './components/navbar';
-import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap/dist/js/bootstrap.bundle.min.js"
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
 import Catalog from './pages/catalog';
 import About from './pages/about';
 import Home from './pages/home';

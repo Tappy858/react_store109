@@ -6,8 +6,8 @@ function Footer(){
                     <div className="container">
                         <div className="row">
                             <div className="col-md-6">
-                                <h5>About Us</h5>
-                                <p>Your description about the website or company can go here.</p>
+                                <h5>Links</h5>
+                                <p>links go here</p>
                             </div>
                             <div className="col-md-6">
                                 <h5>Contact Us</h5>
