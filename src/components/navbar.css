@@ -1,0 +1,30 @@
+/* navbar.css */
+
+.navbar {
+    background: linear-gradient(to right, #3e755f, #8dc796);
+    /* Forest gradient background */
+}
+
+.navbar-brand {
+    color: #fff;
+    /* White text color for the brand */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    background-color: #fff;
+    /* White background color for the toggler button */
+}
+
+.nav-link {
+    color: #fff;
+    /* White text color for the links */
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    /* Add underline on hover */
+}
