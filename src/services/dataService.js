@@ -1,6 +1,6 @@
 let catalog = [
   {
-    title: "Orange",
+    title: "Oranges",
     category: "fruit",
     price: 15.99,
     image: "oranges.jpg",
@@ -28,7 +28,7 @@ let catalog = [
     _id: "4",
   },
   {
-    title: "Pancake",
+    title: "Pancakes",
     category: "dairy",
     price: 12.99,
     image: "pancake.jpg",

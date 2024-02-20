@@ -6,6 +6,7 @@ import About from "./pages/about";
 import Catalog from "./pages/catalog";
 import Footer from "./components/footer";
 import Home from "./pages/home";
+import Admin from "./pages/admin";
 import Navbar from "./components/navbar";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/catalog" element={<Catalog />} />
+            <Route path="/admin" element={<Admin />} />
           </Routes>
         </main>
         <Footer />
