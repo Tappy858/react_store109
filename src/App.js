@@ -9,6 +9,7 @@ import Home from "./pages/home";
 import Admin from "./pages/admin";
 import Navbar from "./components/navbar";
 
+
 function App() {
   return (
     <BrowserRouter>

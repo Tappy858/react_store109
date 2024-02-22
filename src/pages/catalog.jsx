@@ -23,13 +23,17 @@ function Catalog() {
     }
 
     return (
-        <><h1>Look at my {productState.length} new awesome products!</h1>
-        <p>Status: {status}</p>
-        <div className="product-container">
-            {productState.map((productArrow) => (
-                <Product key={productArrow.id} data={productArrow}></Product>
-            ))}
-        </div></>
+        <>
+            <h1>
+                Discover Our Collection of {productState.length} Exceptional Products!
+            </h1>
+            <p>Status: <span style={{ color: status === 'Loading...' ? 'red' : 'green' }}>{status}</span></p>
+            <div className="product-container">
+                {productState.map((product) => (
+                    <Product key={product.id} data={product} loading={status === 'Loading...'} />
+                ))}
+            </div>
+        </>
     );
 }
 

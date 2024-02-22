@@ -46,7 +46,26 @@ let catalog = [
 class DataService {
   getProducts() {
     return catalog;
-    }
-}
+  }
 
+  addToCart(prod) {
+    // add a product to local storage
+    // local storage supports string key-value pairs
+    let cart = this.readCart();
+    cart.push(prod);
+
+    const jsonCart = JSON.stringify(cart);
+    localStorage.setItem("cart", jsonCart);
+  }
+
+  readCart() {
+    // reads the cart from local storage
+    const jsonCart = localStorage.getItem("cart");
+    if (jsonCart) {
+      return JSON.parse(jsonCart);
+    } else {
+      return []; // empty cart
+    }
+  }
+}
 export default DataService;

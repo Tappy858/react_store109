@@ -7,7 +7,7 @@
 }
 
 .home h3 {
-    color: #28a745;
+    color: #207e36;
     /* Set your desired text color */
 }
 
@@ -18,4 +18,18 @@
 
 .home .main-img{
     width: 70%;
+}
+
+.link-text {
+    text-decoration: none;
+    color: #4CAF50;
+    /* Green color for an organic feel */
+    font-weight: bold;
+    transition: color 0.3s ease;
+    /* Smooth color transition on hover */
+}
+
+.link-text:hover {
+    color: #388e3c;
+    /* Darker green on hover */
 }
