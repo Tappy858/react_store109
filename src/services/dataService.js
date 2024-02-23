@@ -43,29 +43,37 @@ let catalog = [
   },
 ];
 
+const CART_KEY = "cart";
+
 class DataService {
   getProducts() {
     return catalog;
   }
 
   addToCart(prod) {
-    // add a product to local storage
-    // local storage supports string key-value pairs
     let cart = this.readCart();
     cart.push(prod);
 
     const jsonCart = JSON.stringify(cart);
-    localStorage.setItem("cart", jsonCart);
+    localStorage.setItem(CART_KEY, jsonCart);
   }
 
   readCart() {
-    // reads the cart from local storage
-    const jsonCart = localStorage.getItem("cart");
+    const jsonCart = localStorage.getItem(CART_KEY);
     if (jsonCart) {
       return JSON.parse(jsonCart);
     } else {
       return []; // empty cart
     }
   }
+
+  removeItem(prodId) {
+    let cart = this.readCart();
+    const updatedCart = cart.filter((item) => item._id !== prodId);
+
+    const jsonCart = JSON.stringify(updatedCart);
+    localStorage.setItem(CART_KEY, jsonCart);
+  }
 }
+
 export default DataService;
