@@ -12,9 +12,9 @@ function Catalog() {
         setStatus("Loading...");
     }, []);
 
-    function loadCatalog() {
+    async function loadCatalog() {
         let service = new DataService();
-        let products = service.getProducts();
+        let products = await service.getProducts();
         setProducts(products);
 
         setTimeout(() => {

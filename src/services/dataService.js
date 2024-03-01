@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 let catalog = [
   {
     title: "Oranges",
@@ -46,8 +48,13 @@ let catalog = [
 const CART_KEY = "cart";
 
 class DataService {
-  getProducts() {
-    return catalog;
+  async getProducts() {
+    // return catalog
+    let response = await axios.get("http://127.0.0.1:5000/api/products");
+    return response.data;
+  }catch(error) {
+    console.error("Error fetching products:", error);
+    throw error;
   }
 
   addToCart(prod) {

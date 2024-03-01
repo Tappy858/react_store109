@@ -1,22 +1,23 @@
-from flask import Flask, jsonify
+from flask import Flask, json
 from data import catalog  # Assuming catalog is defined in the data module
+from flask_cors import CORS
 
 app = Flask(__name__)
-
-# Home route
-@app.route("/")
+CORS(app) # warning: this disables CORS policy
+# Home get
+@app.get("/")
 def home():
     return "Hello from server"
 
-# Test route
-@app.route("/test")
+# Test get
+@app.get("/test")
 def test():
     return "This is another page"
 
 # API endpoint to get products
-@app.route('/api/products')
+@app.get('/api/products')
 def get_products():
-    return jsonify(catalog)
+    return json.dumps(catalog)
 
 # Run the Flask application if this script is executed
 if __name__ == "__main__":

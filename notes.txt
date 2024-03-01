@@ -20,3 +20,22 @@ git push -u origin master
 
 # push for the n-th time
 git push
+
+
+# to run server
+
+# activate venv (vitual environment)
+Win:
+venv\Scripts\activate
+
+Mac:
+source venv/bin/activate
+
+# run server
+python3 server.py
+
+# cors 
+py -m pip install flask-cors
+
+# axios
+npm install -s axios
